@@ -2,7 +2,6 @@ import streamlit as st
 from dotenv import load_dotenv
 import pickle
 from PyPDF2 import PdfReader
-from streamlit_extras.add_vertical_space import add_vertical_space # type: ignore
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 import numpy as np
@@ -20,7 +19,6 @@ with st.sidebar:
     - [Hugging Face Transformers](https://huggingface.co/sentence-transformers) models
  
     ''')
-    add_vertical_space(5)
     st.write('Made with ❤️ by [Shivang Sinha](https://www.linkedin.com/in/shivang-sinha-92755012b/)')
  
 load_dotenv()
